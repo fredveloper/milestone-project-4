@@ -1,6 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>          
+{% endblock %}
+
 {% block content %}
-    <h1 class="display-4 text-success">It works!</h1>
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col my-auto">
+                <h1>Welcome to the Healthy Cakery</h1>
+                <p>We offer a range of cakes, freshly baked with natural ingredients.</p>
+                <div class="my-4">
+                    <a href="" class="shop-now-button btn btn-lg py-3 float-right">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
