@@ -1,0 +1,59 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+body {
+    height: 100%;
+    background: url('/static/images/homepage-background.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    color: #fcfbc7;
+}
+
+.navbar {
+    height: 80px;
+    background: #373b4d;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+}
+
+.navbar-brand img
+{
+    width: 220px;
+}
+
+.navbar-nav.navbar-nav-left> li{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fcfbc7;
+}
+
+.btn-outline-warning {
+    color: #373b4d;
+    border-color: #fcfbc7;
+    background: #fcfbc7;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn-outline-warning:hover {
+    color: #fcfbc7;
+    border-color: #fcfbc7;
+    background: #373b4d;
+    font-family: 'Oswald', sans-serif;
+}
