@@ -3,6 +3,7 @@
     "pk": 1,
     "model": "products.product",
     "fields": {
+      "sku": "ch900101",  
       "name": "Double Chocolate Cake",
       "description": "Chocolate cake made with almond flour, brown rice flour, Stevia, Eggs, peanut butter, organic cocoa, Chocolate 58% without sugar suitable for Diabetics, Gluten Free, No Casein.",
       "price": 17.00,
@@ -16,7 +17,8 @@
     "pk": 2,
     "model": "products.product",
     "fields": {
-        "name": "Strawberry Chocolate Cake",
+      "sku": "ch900102",
+      "name": "Strawberry Chocolate Cake",
       "description": "Chocolate cake made with almond flour, brown rice flour, Stevia, Eggs, peanut butter, organic cocoa, organic strawberries. Topping: chocolate 58% without sugar suitable for Diabetics, Gluten Free, No Casein.",
       "price": 20.00,
       "category": 1,
@@ -29,7 +31,8 @@
     "pk": 3,
     "model": "products.product",
     "fields": {
-        "name": "Peanut Chocolate Cake",
+      "sku": "ch900103", 
+      "name": "Peanut Chocolate Cake",
       "description": "Chocolate sponge cake made with almond flour, brown rice flour, Stevia, organic eggs, peanut butter, organic cocoa, Chocolate, filling and topping, sugar-free caramel cream, low-fat cream cheese, peanuts in pieces and chips of 58% sugar free chocolate suitable for Type 2 Diabetics, Gluten Free, Sugar free.",
       "price": 20.00,
       "category": 1,
@@ -42,7 +45,8 @@
     "pk": 4,
     "model": "products.product",
     "fields": {
-        "name": "Carrot Cake",
+      "sku": "ch900104",
+      "name": "Carrot Cake",
       "description": "Cake made with almond flour, brown rice flour, Stevia, Organic Eggs, carrots, peanut butter, filling and topping Greek yogurt and cream cheese, organic strawberries and blueberries, sugar-free suitable for Diabetics, Gluten Free.",
       "price": 20.00,
       "category": 1,
@@ -55,7 +59,8 @@
     "pk": 5,
     "model": "products.product",
     "fields": {
-        "name": "Amelie Cake",
+      "sku": "ch900201",
+      "name": "Amelie Cake",
       "description": "Vanilla sponge cake made with almond flour, brown rice flour, Stevia, Organic Eggs, peanut butter, filling and topping Greek yogurt and cream cheese, organic strawberries and blueberries, sugar-free suitable for Diabetics, Gluten Free.",
       "price": 22.00,
       "category": 2,
@@ -68,7 +73,8 @@
     "pk": 6,
     "model": "products.product",
     "fields": {
-        "name": "Amazonia Cake",
+      "sku": "ch900202",
+      "name": "Amazonia Cake",
       "description": "Chocolate cake made with almond flour, brown rice flour, Stevia, organic eggs, peanut butter, organic cocoa, chocolate. Topping: coconut cream and 58% sugar-free chocolate suitable for Diabetics, raspberries, blueberries and cherries",
       "price": 24.00,
       "category": 2,
@@ -81,7 +87,8 @@
     "pk": 7,
     "model": "products.product",
     "fields": {
-        "name": "Eden’s Cake",
+      "sku": "ch900203",
+      "name": "Eden’s Cake",
       "description": "Almond cake made with almond flour, brown rice flour, Stevia, organic eggs and egg whites, organic almonds and peanuts. Filling and topping: Greek yogurt and low-fat cream cheese, organic strawberries, apricots, blueberries and natural flowers.",
       "price": 24.00,
       "category": 2,
@@ -94,7 +101,8 @@
     "pk": 8,
     "model": "products.product",
     "fields": {
-        "name": "Almond Coconut Cake",
+      "sku": "ch900204",
+      "name": "Almond Coconut Cake",
       "description": "Sponge cake made with almond flour, coconut flour, Stevia, organic eggs and egg whites. Filling and topping: Greek yogurt, coconut cream, organic almond shavings and coconut flakes.",
       "price": 22.00,
       "category": 2,
@@ -107,7 +115,8 @@
     "pk": 9,
     "model": "products.product",
     "fields": {
-        "name": "Passion Fruit Cheesecake",
+      "sku": "ch900301",
+      "name": "Passion Fruit Cheesecake",
       "description": "Crunchy almond and coconut base, soft cream cheese cream, stevia, passion fruit jam topping. Free of gluten, sugar, egg.",
       "price": 25.00,
       "category": 3,
@@ -120,7 +129,8 @@
     "pk": 10,
     "model": "products.product",
     "fields": {
-        "name": "Ferrero Style Chessecake",
+      "sku": "ch900302",
+      "name": "Ferrero Style Chessecake",
       "description": "Made with Greek yogurt, cream cheese, stevia, organic eggs, lots of chocolate with hazelnuts. Sugar-free, Gluten-free",
       "price": 25.00,
       "category": 3,
@@ -133,7 +143,8 @@
     "pk": 11,
     "model": "products.product",
     "fields": {
-        "name": "Red Fruits Vegan Cheesecake",
+      "sku": "ch900303",
+      "name": "Red Fruits Vegan Cheesecake",
       "description": "Crunchy base with almonds and dates, soft cashew cream, coconut cream, stevia, red berry jam topping (organic strawberries and blackberries). Free of gluten, sugar, dairy, egg.",
       "price": 30.00,
       "category": 3,
@@ -146,7 +157,8 @@
     "pk": 12,
     "model": "products.product",
     "fields": {
-        "name": "Coconut Caramel Chessecake",
+      "sku": "ch900304",
+      "name": "Coconut Caramel Chessecake",
       "description": "Crunchy base with almonds, cream cheese, coconut cream, coconut caramel, stevia. Free of gluten, sugar, dairy, egg.",
       "price": 25.00,
       "category": 3,
