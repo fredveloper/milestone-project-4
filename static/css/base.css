@@ -19,8 +19,12 @@ body {
     background-size: cover;
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     color: #fcfbc7;
+}
+
+.text-dark {
+    color: #373b4d;
 }
 
 .navbar {
@@ -56,4 +60,14 @@ body {
     border-color: #fcfbc7;
     background: #373b4d;
     font-family: 'Oswald', sans-serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #fff;
+    z-index: -1;
 }
