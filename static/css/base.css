@@ -20,11 +20,11 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 1.125rem;
-    color: #fcfbc7;
+    color: #373b4d;
 }
 
-.text-dark {
-    color: #373b4d;
+.text-light {
+    color: #fcfbc7 !important;
 }
 
 .navbar {
