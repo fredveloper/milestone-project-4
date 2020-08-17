@@ -20,7 +20,7 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 1.125rem;
-    color: #373b4d;
+    color: #343a40;
 }
 
 .text-light {
@@ -29,7 +29,6 @@ body {
 
 .navbar {
     height: 80px;
-    background: #373b4d;
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
 }
@@ -48,8 +47,21 @@ body {
     color: #fcfbc7;
 }
 
+.dropdown-menu {
+    border: 0;
+}
+
+a.dropdown-item {
+    color: #fcfbc7;
+}
+
+a.dropdown-item:hover {
+    background: #fcfbc7;
+    color: #343a40;
+}
+
 .btn-outline-warning {
-    color: #373b4d;
+    color: #343a40;
     border-color: #fcfbc7;
     background: #fcfbc7;
     font-family: 'Oswald', sans-serif;
@@ -58,7 +70,7 @@ body {
 .btn-outline-warning:hover {
     color: #fcfbc7;
     border-color: #fcfbc7;
-    background: #373b4d;
+    background: #343a40;
     font-family: 'Oswald', sans-serif;
 }
 
