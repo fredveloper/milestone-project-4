@@ -19,8 +19,8 @@
       "pk": 3,
       "model": "products.category",
       "fields": {
-        "name": "cheese_cakes",
-        "friendly_name": "Cheese Cakes"
+        "name": "cheesecakes",
+        "friendly_name": "Cheesecakes"
       }
     }
   ]
