@@ -75,7 +75,7 @@
                      </li>
                      <li class="nav-item dropdown">
                         <a class="nav-link text-uppercase" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
-                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenu">
+                        <div class="dropdown-menu bg-dark border-0" aria-labelledby="navbarDropdownMenu">
                             <a class="dropdown-item" href="{% url 'products' %}">All Cakes</a>
                             <a class="dropdown-item" href="{% url 'products' %}?category=classic_cakes">Classic Cakes</a>
                             <a class="dropdown-item" href="{% url 'products' %}?category=signature_cakes">Signature Cakes</a>
@@ -101,7 +101,7 @@
                            </div>
                         </a>
                         <div
-                           class="dropdown-menu border-0"
+                           class="dropdown-menu bg-dark border-0"
                            aria-labelledby="user-options"
                            >
                            {% if request.user.is_authenticated %} 
