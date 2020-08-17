@@ -83,3 +83,7 @@ a.dropdown-item:hover {
     background: #fff;
     z-index: -1;
 }
+
+.card-img-top {
+    border-radius: calc(.25rem - 1px) !important;
+}
