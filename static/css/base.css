@@ -56,17 +56,19 @@ a.dropdown-item:hover {
     color: #343a40;
 }
 
+.btn {
+    font-family: 'Oswald', sans-serif;
+}
+
 .btn-outline-warning {
     color: #343a40;
     border-color: #fcfbc7;
     background: #fcfbc7;
-    font-family: 'Oswald', sans-serif;
 }
 
 .btn-outline-warning:hover {
     color: #fcfbc7;
     border-color: #fcfbc7;
-    background: #343a40;
     font-family: 'Oswald', sans-serif;
 }
 
