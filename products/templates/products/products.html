@@ -51,9 +51,9 @@
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span class="small"><a href="{% url 'products' %}">All Cakes</a> | </span>
+                                <span class="small"><a class="text-muted" href="{% url 'products' %}">All Cakes</a> | </span>
                             {% endif %}
-                            {{ products|length }} Cakes{% if search_term %} found</strong>{% endif %}
+                            <strong>{{ products|length }} Cakes{% if search_term %} found</strong>{% endif %}
                         </p>
                     </div>
                 </div>
