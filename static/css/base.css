@@ -62,14 +62,12 @@ a.dropdown-item:hover {
 
 .btn-outline-warning {
     color: #343a40;
-    border-color: #fcfbc7;
+    border-color: #343a40;
     background: #fcfbc7;
 }
 
 .btn-outline-warning:hover {
-    color: #fcfbc7;
-    border-color: #fcfbc7;
-    font-family: 'Oswald', sans-serif;
+    border-color: #343a40;
 }
 
 .overlay {
