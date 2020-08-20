@@ -47,20 +47,17 @@
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price }}</p>
                                     </td>
-                                    <td class="py-3 w-10">
-                                        <form class="form update-form" method="POST" action="">
+                                    <td class="py-3 w-25">
+                                        <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group">
                                                 <div class="input-group input-group-sm">
-                                                    <input class="form-control qty_input text-center" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                                    <input class="form-control qty_input text-center" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
                                                 </div>
                                             </div>
                                         </form>
-                                        <div class="btn-group btn-group-sm" role="group" aria-label="button group">
-                                            <a class="update-link btn btn-outline-warning btn-sm text-uppercase">Update</a>
-                                            <a class="update-link btn btn-dark btn-sm text-uppercase text-light">Remove</a>
-                                        </div>
-
+                                        <a class="update-item btn btn-outline-warning btn-sm text-uppercase">Update</a>
+                                        <a class="remove-item btn btn-dark btn-sm text-uppercase text-light" id="remove_{{ item.item_id }}">Remove</a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price }}</p>
@@ -109,7 +106,7 @@
 
 <script type="text/javascript">
     // Update quantity on click
-    $('.update-link').click(function(e) {
+    $('.update-item').click(function(e) {
         var form = $(this).prev('.update-form');
         form.submit();
     })
@@ -118,8 +115,8 @@
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var url = `/cart/remove/${itemId}`;
-        var data = {'csrfmiddlewaretoken': csrfToken };
+        var url = `/cart/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken};
 
         $.post(url, data)
          .done(function() {
