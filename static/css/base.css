@@ -83,3 +83,18 @@ a.dropdown-item:hover {
 .card-img-top {
     border-radius: calc(.25rem - 1px) !important;
 }
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
