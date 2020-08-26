@@ -10,7 +10,10 @@ def cart_contents(request):
     product_count = 0
     cart = request.session.get('cart', {})
 
-    delivery = 15
+    if total > 0:
+        delivery = 15
+    else:
+        delivery = 0
     
     for item_id, quantity in cart.items():
         product = get_object_or_404(Product, pk=item_id)
