@@ -74,6 +74,12 @@
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
+                                            {% if product.category %}
+                    <p class="small mt-1 mb-0"><span class="font-weight-bold">Category: </span>
+                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                        {{ product.category.friendly_name }}</a>
+                    </p>
+                    {% endif %}
                                         </div>
                                     </div>
                                 </div>

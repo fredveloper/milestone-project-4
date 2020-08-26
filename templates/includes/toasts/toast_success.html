@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col">
                     <p class="mt-3 mb-1 font-weight-bold"> Total (Exc. delivery)
-                        <span class="float-right">${{ total|floatformat:2 }}</span>
+                        <span class="float-right">€{{ total|floatformat:2 }}</span>
                     </p>
                     <a href="{% url 'view_cart' %}" class="btn btn-dark btn-block text-light">
                         <span class="text-uppercase">Go To Secure Checkout</span>
