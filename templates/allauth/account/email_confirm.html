@@ -6,9 +6,14 @@
 {% block head_title %}{% trans "Confirm E-mail Address" %}{% endblock %}
 
 
-{% block content %}
-<h1>{% trans "Confirm E-mail Address" %}</h1>
-
+{% block inner_content %}
+<div class="row">
+    <div class="col text-center mt-5">
+        <hr class="mb-2">
+        <h2>{% trans "Confirm E-mail Address" %}</h2>
+        <hr class="mb-5">
+    </div>
+</div>
 {% if confirmation %}
 
 {% user_display confirmation.email_address.user as user_display %}
@@ -17,7 +22,9 @@
 
 <form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
 {% csrf_token %}
-    <button type="submit">{% trans 'Confirm' %}</button>
+    <div class="text-center my-4">
+        <button class="btn btn-dark btn-md text-uppercase text-light" type="submit">{% trans 'Confirm' %}</button>
+    </div>
 </form>
 
 {% else %}

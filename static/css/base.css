@@ -100,7 +100,7 @@ a.dropdown-item:hover {
     height: 2px;
 }
 
-/* */
+/* Toasts */
 
 .arrow-up {
     width: 0; 
@@ -129,3 +129,13 @@ a.dropdown-item:hover {
     border-bottom-color: #17a2b8 !important;
 }
 
+/* Allauth forms */
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    text-align: center;
+}
