@@ -28,10 +28,16 @@
                         <small class="text-muted">No Rating</small>
                     {% endif %}
                     {% if product.category %}
-                    <p class="small mt-1 mb-0"><span class="font-weight-bold">Category: </span>
+                        <p class="small mt-1 mb-0"><span class="font-weight-bold">Category: </span>
                         <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
                         {{ product.category.friendly_name }}</a>
                     </p>
+                    {% endif %}
+                    {% if request.user.is_superuser %}
+                        <div class="mt-2">
+                        <a href="{% url 'edit_product' product.id %}" class="update-item btn btn-outline-warning btn-sm text-uppercase">Edit</a>
+                        <a href="{% url 'delete_product' product.id %}" class="remove-item btn btn-dark btn-sm text-uppercase text-light" id="remove_{{ item.item_id }}">Delete</a>
+                        </div>
                     {% endif %}
                     <p class="mt-3">{{ product.description }}</p>
                     <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
