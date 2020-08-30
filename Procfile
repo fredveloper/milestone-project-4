@@ -1,0 +1,1 @@
+web: gunicorn healthy_cakery.wsgi:application

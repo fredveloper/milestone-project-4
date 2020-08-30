@@ -26,7 +26,7 @@ SECRET_KEY = '!-#-@zwk5a+s_0e6ld*y5)p=xbupuj#(z*auu#-&f(hl7sqtrp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['healthy-cakery.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -119,16 +119,17 @@ WSGI_APPLICATION = 'healthy_cakery.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-DATABASES = {
-    'default': dj_database_url.parse('postgres://vbcfpdyjuzaqie:687aa4baa0888d39a8075f26db77c20909102560fa1057604f46884de3ccd6f7@ec2-54-75-231-215.eu-west-1.compute.amazonaws.com:5432/d4v7uuaav9de5p')
-}
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation
