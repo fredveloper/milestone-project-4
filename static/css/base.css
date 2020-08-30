@@ -29,13 +29,19 @@ body {
 }
 
 .navbar {
+    width: 100%;
     height: 95px;
     font-family: 'Oswald', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .navbar-brand img
 {
+    width: 220px;
+}
+
+.logo-small {
+    display: none;
     width: 220px;
 }
 
@@ -46,6 +52,10 @@ body {
 
 .navbar-dark .navbar-nav .nav-link {
     color: #fcfbc7;
+}
+
+.navbar-nav .dropdown-menu {
+    top: 60px;
 }
 
 a.dropdown-item {
@@ -90,8 +100,8 @@ a.dropdown-item:hover {
 .message-container {
     position: fixed;
     top: 95px;
-    right: 70px;
-    min-width: 260px;
+    right: 0;
+    min-width: 200px;
     z-index: 99999999999;
 }
 
@@ -103,7 +113,7 @@ a.dropdown-item:hover {
     height: 2px;
 }
 
-/* Allauth forms */
+/* Allauth Forms */
 
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
@@ -142,3 +152,42 @@ a.dropdown-item:hover {
     border-radius: 0;
 }
 
+/* Media Queries */
+
+@media only screen and (max-width: 992px) {
+    .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .navbar-brand{
+        margin-left: 1rem;
+    }
+    .navbar-toggler{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .navbar-nav.navbar-nav-right> li{
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navbar-brand {
+        margin-right: 0;
+        margin-left: 0.7rem;
+    }
+    .navbar-brand img{
+        width: 150px;
+    }
+    .logo-normal {
+        display: none;
+    }
+    .logo-small {
+        display: block;
+    }
+    .navbar-toggler{
+        margin-right: 0.7rem;
+        margin-left: 0.7rem;
+    }
+}
