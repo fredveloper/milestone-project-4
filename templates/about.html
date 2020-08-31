@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <hr class="featurette-divider mt-0">
+    <div class="row featurette">
+      <div class="col-md-7 text-center">
+        <h2 class="featurette-heading">Our Secret: <span class="text-muted">Healthy ingredients!</span></h2>
+        <p class="lead mt-4">At the Healthy Cakery we create healthy cakes that can cater to any dietary requirement. We have learned the secrets behind great taste and texture that leans less heavily on sugar and butter. We only use ingredients that are beneficial to you, without compromising on taste! We know how to make healthier versions of your favourites classic cakes.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="{% static 'images/about-1.png' %}" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"/>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2 text-center">
+        <h2 class="featurette-heading">Our Cakes: <span class="text-muted"> Are naturally sweet!</span></h2>
+        <p class="lead mt-4">If you’re looking for an amazing natural cake that will turn out everything you picture it to be, opt for our healthy cakery. Our custom cakes and confections are guilt-free and so very delicious. What more could you ask for? For your maximum convenience don’t forget to order healthy cake delivery in Dublin City.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="{% static 'images/about-2.png' %}" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"/>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7 text-center">
+        <h2 class="featurette-heading">Our Team: <span class="text-muted">We care about you!</span></h2>
+        <p class="lead mt-4">Our Team of cake experts goes above and beyond to make our dessert table filled with our healthy treats a success. Your sweet treats provided by our Healthy Cakery will have rave reviews at your celebration!</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="{% static 'images/about-3.png' %}" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"/>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+</div>
+{% endblock %}
+    

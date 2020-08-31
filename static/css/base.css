@@ -95,6 +95,18 @@ a.dropdown-item:hover {
     border-radius: calc(.25rem - 1px) !important;
 }
 
+/* Featurettes */
+
+.featurette-divider {
+  margin: 5rem 0; 
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
 /* Toasts */
 
 .message-container {
@@ -190,4 +202,17 @@ a.dropdown-item:hover {
         margin-right: 0.7rem;
         margin-left: 0.7rem;
     }
+}
+
+@media (min-width: 40em) {
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
 }
