@@ -102,20 +102,20 @@
           <!-- Pass the client secret to the view so we can get the payment intent id -->
           <input type="hidden" value="{{ client_secret }}" name="client_secret">
         </fieldset>
-        <div class="submit-button text-right mt-5 mb-2">
-          <a href="{% url 'view_cart' %}" class="btn btn-outline-warning btn-lg text-uppercase">
+        <div class="submit-button text-center mt-2 mb-2">
+          <a href="{% url 'view_cart' %}" class="btn btn-outline-warning btn-md text-uppercase">
           <span class="icon">
           <i class="fas fa-chevron-left"></i>
           </span>
-          <span class="text-uppercase">Adjust Shopping Cart</span>
+          <span class="text-uppercase">Shopping Cart</span>
           </a>
-          <button id="submit-button" class="btn btn-dark btn-lg text-uppercase text-light">
+          <button id="submit-button" class="btn btn-dark btn-md text-uppercase text-light">
           <span class="text-uppercase">Complete order</span>
           <span class="icon">
           <i class="fas fa-lock"></i>
           </span>
           </button>
-          <p class="small text-danger my-3">
+          <p class="small text-danger mt-2 mb-5">
             <span class="icon">
             <i class="fas fa-exclamation-circle"></i>
             </span>

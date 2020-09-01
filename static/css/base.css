@@ -202,6 +202,9 @@ a.dropdown-item:hover {
         margin-right: 0.7rem;
         margin-left: 0.7rem;
     }
+    .featurette-divider {
+    margin: 2rem 0 !important;
+    }
 }
 
 @media (min-width: 40em) {
