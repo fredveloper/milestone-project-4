@@ -159,25 +159,25 @@ Requirements:
 
 2. Within the IDE, open the folder that contains the repository.
 
-3. Create a .env file containing the following credentials
+3. Create a .env file containing the following credentials:
 
-os.environ["SECRET_KEY"] = "SECRET_KEY"
+    os.environ["SECRET_KEY"] = "SECRET_KEY"
 
-os.environ["STRIPE_PUBLIC_KEY"] = "STRIPE_PUBLIC_KEY"
+    os.environ["STRIPE_PUBLIC_KEY"] = "STRIPE_PUBLIC_KEY"
 
-os.environ["STRIPE_SECRET_KEY"] = "STRIPE_SECRET_KEY"
+    os.environ["STRIPE_SECRET_KEY"] = "STRIPE_SECRET_KEY"
 
-os.environ["STRIPE_WH_SECRET"] = "STRIPE_WH_SECRET"
+    os.environ["STRIPE_WH_SECRET"] = "STRIPE_WH_SECRET"
 
-os.environ["DATABASE_URL"] = "DATABASE_URL"
+    os.environ["DATABASE_URL"] = "DATABASE_URL"
 
-os.environ["AWS_ACCESS_KEY_ID"] = "AWS_ACCESS_KEY_ID"
+    os.environ["AWS_ACCESS_KEY_ID"] = "AWS_ACCESS_KEY_ID"
 
-os.environ["AWS_SECRET_ACCESS_KEY"] = "AWS_SECRET_ACCESS_KEY"
+    os.environ["AWS_SECRET_ACCESS_KEY"] = "AWS_SECRET_ACCESS_KEY"
 
-os.environ["EMAIL_HOST_PASS"] = "EMAIL_HOST_PASS"
+    os.environ["EMAIL_HOST_PASS"] = "EMAIL_HOST_PASS"
 
-os.environ["EMAIL_HOST_USER"] = "EMAIL_HOST_USER"
+    os.environ["EMAIL_HOST_USER"] = "EMAIL_HOST_USER"
 
 4. Install the required packages by running the command `pip -r requirements.txt`
 
@@ -191,7 +191,6 @@ The business concept of my project was inspired by an existing food business cal
 In this project, I implemented part of the code learnt of Code Institute's mini e-commerce project, but I refactored it to fulfill the functionality intended for the Healthy Cakery website.
 
 ### Content
-- Some code implemented
 - Some of the text in the "About" section was extracted from [CupCakeryNYC](http://www.cupcakerynyc.com/)
 - Some of the cake descriptions were extracted from [Xocolat&More](https://www.xocolatandmore.com/) and translated into the English language.
 
