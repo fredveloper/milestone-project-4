@@ -45,7 +45,7 @@ As the site's owner, I would like to:
 
 ### Design (Mockups)
 
-The design of the application was represented with Mockups. Click [here](https://github.com/fredveloper/milestone-project-4/tree/static/images/mockups) to see the mockups.
+The design of the application was represented with Mockups. Click [here](https://github.com/fredveloper/milestone-project-4/tree/master/static/images/mockups) to see the mockups.
 
 ## Features
 
